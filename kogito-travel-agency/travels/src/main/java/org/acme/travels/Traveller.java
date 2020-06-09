@@ -19,8 +19,25 @@ import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import java.math.BigDecimal;
 
 public class Traveller {
+	/*
+	   Breaking addition starts
+	 */
+
+	private BigDecimal bigDecimal;
+
+	public BigDecimal getBigDecimal() {
+		return bigDecimal;
+	}
+
+	public void setBigDecimal(BigDecimal bigDecimal) {
+		this.bigDecimal = bigDecimal;
+	}
+	/*
+	   Breaking addition ends
+	 */
 
 	@NotBlank(message = "First name must be provided")
 	@Size(min = 2, max = 30)	
